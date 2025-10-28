@@ -5,7 +5,7 @@ application tailored for Nepalese users 🇳🇵, featuring
 product browsing, search, cart management, secure  
 user authentication, and an admin dashboard.
 
-[![MERN Stack](https://img.shields.io/badge/MERN-Stack-green)](https://www.mongodb.com/mern-stack) [![React](https://img.shields.io/badge/React-17.0-blue)](https://reactjs.org/) [![Node.js](https://img.shields.io/badge/Node.js-16.x-green)](https://nodejs.org/) [![MongoDB](https://img.shields.io/badge/MongoDB-5.0-green)](https://www.mongodb.com/) [![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/ShopNepal?style=social)](https://github.com/YOUR_USERNAME/ShopNepal/stargazers)
+[![MERN Stack](https://img.shields.io/badge/MERN-Stack-green)](https://www.mongodb.com/mern-stack) [![React](https://img.shields.io/badge/React-17.0-blue)](https://reactjs.org/) [![Node.js](https://img.shields.io/badge/Node.js-16.x-green)](https://nodejs.org/) [![MongoDB](https://img.shields.io/badge/MongoDB-5.0-green)](https://www.mongodb.com/) [![GitHub stars](https://img.shields.io/github/stars/rohitthapa-dev/MERN-ECOMMERCE?style=social)](https://github.com/rohitthapa-dev/MERN-ECOMMERCE)
 
 🌟 Features
 
@@ -50,8 +50,8 @@ MERN-ECOMMERCE/
 Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ShopNepal.git
-cd ShopNepal
+git clone hgit clone https://github.com/rohitthapa-dev/MERN-ECOMMERCE.git
+cd MERN-ECOMMERCE
 ```
 
 Backend Setup
