@@ -35,7 +35,7 @@ export default function Header() {
           href="#"
           className="mr-2 md:mr-4  ml-2 cursor-pointer py-1.5 font-medium text-xs md:text-base "
         >
-          Material Tailwind
+          Shop Nepal
         </Typography>
         </div>
 

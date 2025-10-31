@@ -5,7 +5,7 @@ import { Avatar, Button, Card, IconButton, Typography } from "@material-tailwind
 import { baseUrl } from "../../app/appUrl.js";
 import ProductRemove from "./ProductRemove.jsx";
 
-const TABLE_HEAD = ["Product", "Price", "Stock", "Brand", "Category", "CreatedAt", "Action"];
+const TABLE_HEAD = ["Product", "Price", "Stock", "Brand", "Category", "Created Date", "Action"];
 
 
 export default function AdminUi() {
