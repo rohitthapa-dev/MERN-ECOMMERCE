@@ -1,35 +1,30 @@
 import { mainApi } from "../../app/mainApi.js";
 
-
-
 export const productApi = mainApi.injectEndpoints({
   endpoints: (builder) => ({
-
     getTopProducts: builder.query({
       query: () => ({
-        url: '/top-5-products',
-        method: 'GET'
+        url: "/top-5-products",
+        method: "GET",
       }),
-      providesTags: ['Product']
+      providesTags: ["Product"],
     }),
 
     getProducts: builder.query({
-      query: ({ search = '', page = 1, sort = '' } = {}) => ({
-        url: '/products',
-        params: { search, page, sort,
-          limit: 8
-         },
-        method: 'GET'
+      query: ({ search = "", page = 1, sort = "" } = {}) => ({
+        url: "/products",
+        params: { search, page, sort, limit: 20 },
+        method: "GET",
       }),
-      providesTags: ['Products']
+      providesTags: ["Products"],
     }),
 
     getProduct: builder.query({
       query: (id) => ({
         url: `/products/${id}`,
-        method: 'GET'
+        method: "GET",
       }),
-      providesTags: ['Products']
+      providesTags: ["Products"],
     }),
 
     addProduct: builder.mutation({
@@ -37,11 +32,11 @@ export const productApi = mainApi.injectEndpoints({
         url: `/products`,
         body: formData,
         headers: {
-          Authorization: token
+          Authorization: token,
         },
-        method: 'POST'
+        method: "POST",
       }),
-      invalidatesTags: ['Products', 'ID']
+      invalidatesTags: ["Products", "ID"],
     }),
 
     updateProduct: builder.mutation({
@@ -49,25 +44,25 @@ export const productApi = mainApi.injectEndpoints({
         url: `/products/${id}`,
         body: formData,
         headers: {
-          Authorization: token
+          Authorization: token,
         },
-        method: 'PATCH'
+        method: "PATCH",
       }),
-      invalidatesTags: ['Products', 'ID']
+      invalidatesTags: ["Products", "ID"],
     }),
 
     removeProduct: builder.mutation({
       query: ({ id, token }) => ({
         url: `/products/${id}`,
         headers: {
-          Authorization: token
+          Authorization: token,
         },
-        method: 'DELETE'
+        method: "DELETE",
       }),
-      invalidatesTags: ['Products']
+      invalidatesTags: ["Products"],
     }),
 
-     reviewProduct: builder.mutation({
+    reviewProduct: builder.mutation({
       query: (q) => ({
         url: `/products/reviews/${q.id}`,
         body: q.data,
@@ -76,10 +71,17 @@ export const productApi = mainApi.injectEndpoints({
         },
         method: "POST",
       }),
-      invalidatesTags: ['Products','id'],
+      invalidatesTags: ["Products", "id"],
     }),
-
-  })
+  }),
 });
 
-export const { useGetProductsQuery, useGetProductQuery, useAddProductMutation, useUpdateProductMutation, useRemoveProductMutation, useGetTopProductsQuery, useReviewProductMutation } = productApi;
+export const {
+  useGetProductsQuery,
+  useGetProductQuery,
+  useAddProductMutation,
+  useUpdateProductMutation,
+  useRemoveProductMutation,
+  useGetTopProductsQuery,
+  useReviewProductMutation,
+} = productApi;
