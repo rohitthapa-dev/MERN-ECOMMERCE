@@ -26,7 +26,7 @@ app.use(
     origin: [
       "http://localhost:5173", // local dev
       "https://mern-ecommerce-yc64.onrender.com", // backend
-      "https://mern-ecommerce.vercel.app", // frontend
+      "https://mernecommerce-website.vercel.app", // frontend
     ],
     credentials: true,
   })
