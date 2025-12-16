@@ -24,8 +24,9 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: [
-      "http://localhost:5173", // local frontend
-      "https://mern-class-wwmh.vercel.app", // deployed frontend URL
+      "http://localhost:5173", // local dev
+      "https://mern-ecommerce-yc64.onrender.com", // backend
+      "https://mern-ecommerce.vercel.app", // frontend
     ],
     credentials: true,
   })
