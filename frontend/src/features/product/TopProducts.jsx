@@ -30,7 +30,7 @@ export default function TopProducts() {
           {/* Overlay */}
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <h2 className="text-white text-lg font-semibold">{item.title}</h2>
-            <p className="text-white text-sm mt-1">${item.price.toFixed(2)}</p>
+            <p className="text-white text-sm mt-1">Rs.{item.price.toFixed(2)}</p>
           </div>
         </div>
       ))}
