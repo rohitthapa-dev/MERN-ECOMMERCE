@@ -5,12 +5,13 @@ import { Avatar, Button, Card, IconButton, Typography } from "@material-tailwind
 import { baseUrl } from "../../app/appUrl.js";
 import ProductRemove from "./ProductRemove.jsx";
 
-const TABLE_HEAD = ["Product", "Price", "Stock", "Brand", "Category", "Created Date", "Action"];
+const TABLE_HEAD = ["Product", "Price", "Stock", "Brand", "Category", "CreatedAt", "Action"];
 
 
 export default function AdminUi() {
 
-  const { isLoading, error, data } = useGetProductsQuery();
+  const { isLoading, error, data } = useGetProductsQuery({ limit: 1000 });
+  console.log(data)
   const nav = useNavigate();
   if (isLoading) return <h1>Loading...</h1>
   if (error) return <h1 className="text-red-500">{error.data}</h1>
