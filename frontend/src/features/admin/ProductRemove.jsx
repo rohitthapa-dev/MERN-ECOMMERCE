@@ -9,7 +9,7 @@ export default function ProductRemove({ id }) {
   const handleRemove = async () => {
     try {
       await removeProduct({ id, token: user.token }).unwrap();
-      toast.success('Remove Successfully')
+      toast.success('Removed Successfully')
     } catch (err) {
       const message = err?.data?.message || err?.error || "Something went wrong";
       toast.error(message)

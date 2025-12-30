@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { baseUrl } from "../../app/appUrl.js";
 import { Button, IconButton } from "@material-tailwind/react";
 import { clearCart, setCart } from "./cartSlice.js";
@@ -25,7 +26,28 @@ export default function CartPage() {
   return (
     <div className="p-5">
 
-      {carts.length === 0 ? <h1 className="text-2xl">Card is empty</h1> :
+      {carts.length === 0 ? (
+  <div className="flex flex-col items-center justify-center min-h-[60vh] text-center">
+    <i className="fas fa-shopping-cart text-6xl text-gray-400 mb-4"></i>
+
+    <h1 className="text-2xl font-semibold text-gray-700">
+      Your cart is empty
+    </h1>
+
+    <p className="text-gray-500 mt-2">
+      Add some products to continue shopping
+    </p>
+
+    <Link to="/">
+  <Button
+    size="sm"
+    className="mt-6 normal-case bg-[#5285F2] hover:bg-[#3b6adf]">
+  
+    Continue Shopping
+  </Button>
+</Link>
+  </div>
+) : (
         <div>
           {carts.map((item) => {
             return <div className="w-[600px] max-w-screen-lg  bg-gray-200 rounded-lg shadow-md p-6 flex gap-15 items-center justify-between my-5" key={item.id}>
@@ -55,7 +77,7 @@ export default function CartPage() {
             onClick={handleOrder}
             loading={isLoading}
             className="mt-5">Place An Order</Button>
-        </div>}
+        </div>)}
 
 
     </div>

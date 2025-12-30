@@ -39,7 +39,7 @@ export default function UserUpdateForm() {
                 data: formData,
                 token: token
               }).unwrap();
-              toast.success('Register sucessfully');
+              toast.success('Updated Profile sucessfully');
               nav(-1);
             } catch (err) {
               const message = err?.data?.message || err?.error || "Something went wrong";
@@ -104,7 +104,7 @@ export default function UserUpdateForm() {
                   <Button type="submit"
                     loading={isUpdating}
                     size="sm" className="mt-6 normal-case bg-[#5285F2]  hover:bg-[#3b6adf] " >
-                    Edit
+                    Update
                   </Button>
                 </div>
               </form>

@@ -7,6 +7,16 @@ user authentication, and an admin dashboard.
 
 [![MERN Stack](https://img.shields.io/badge/MERN-Stack-green)](https://www.mongodb.com/mern-stack) [![React](https://img.shields.io/badge/React-17.0-blue)](https://reactjs.org/) [![Node.js](https://img.shields.io/badge/Node.js-16.x-green)](https://nodejs.org/) [![MongoDB](https://img.shields.io/badge/MongoDB-5.0-green)](https://www.mongodb.com/) [![GitHub stars](https://img.shields.io/github/stars/rohitthapa-dev/MERN-ECOMMERCE?style=social)](https://github.com/rohitthapa-dev/MERN-ECOMMERCE)
 
+🌐 Live Demo
+
+• 🚀 Frontend (Vercel)
+https://mernecommerce-website.vercel.app
+
+• 🛠️ Backend API (Render)
+https://mern-ecommerce-yc64.onrender.com
+
+📡 Note: Backend may take a few seconds to respond on the first request due to Render cold start.
+
 🌟 Features
 
 🛍️ Public  
@@ -62,7 +72,8 @@ npm install
 npm run dev
 ```
 
-Backend runs on: http://localhost:5050
+Backend API will run on:
+https://mern-ecommerce-yc64.onrender.com
 
 Frontend Setup
 
@@ -72,7 +83,8 @@ npm install
 npm run dev
 ```
 
-Frontend runs on: http://localhost:5173
+Frontend will run on:
+https://mernecommerce-website.vercel.app
 
 🔐 Authentication  
 • JWT token-based authentication  

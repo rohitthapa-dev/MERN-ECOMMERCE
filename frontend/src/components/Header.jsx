@@ -30,13 +30,13 @@ export default function Header() {
     <Navbar className="mx-auto  p-2 lg:rounded-full lg:pl-6">
       <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
         <div>
-        <Typography
-          as="a"
-          href="#"
-          className="mr-2 md:mr-4  ml-2 cursor-pointer py-1.5 font-medium text-xs md:text-base "
-        >
-          Shop Nepal
-        </Typography>
+        <NavLink to="/">
+  <Typography
+    className="mr-2 md:mr-4 ml-2 cursor-pointer py-1.5 font-medium text-xs md:text-base"
+  >
+    Shop Nepal
+  </Typography>
+</NavLink>
         </div>
 
         {pathname !== '/search' && <div >
