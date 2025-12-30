@@ -62,7 +62,7 @@ npm install
 npm run dev
 ```
 
-Backend runs on: http://localhost:5050
+Backend runs on: [(https://mern-ecommerce-yc64.onrender.com)](https://mern-ecommerce-yc64.onrender.com)
 
 Frontend Setup
 
@@ -72,7 +72,7 @@ npm install
 npm run dev
 ```
 
-Frontend runs on: http://localhost:5173
+Frontend runs on: [http://localhost:5173](https://mernecommerce-website.vercel.app/)
 
 🔐 Authentication  
 • JWT token-based authentication  
